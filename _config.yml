@@ -21,7 +21,7 @@
 title: Alexander Bazarov
 email: alexander@bazarov.dev
 description: >- # this means to ignore newlines until next section
-  Personal blog with random projects and notes. 
+  Personal blog with projects and notes. 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://bazarov.dev" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  bazarovdev
@@ -32,11 +32,15 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   #- jekyll-feed
   - jekyll-remote-theme # add this line to the plugins list if you already have one
+  #- jekyll-relative-links
+
+# relative_links:
+#   enabled:     true
+#   collections: true
 
 collections:
   projects:
     output: true
-    
 
   # - name: Yocto Layer for Klipper
   #   url: https://github.com/bazarovdev/meta-klipper
@@ -44,6 +48,10 @@ collections:
   #   url: /project2/
   # - name: Project 3
   #   url: /project3/
+
+
+# kramdown:
+#   input: GFM
 
 # Exclude from processing.
 # The following items will not be processed, by default.
