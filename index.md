@@ -5,9 +5,4 @@
 layout: default
 ---
 
-text
-
-[Page](./page)  
-[Home](./home)  
-[Post](./post)  
-[Post2](./_posts/2025-05-18-welcome-to-jekyll)  
+{% include_relative about.md %}
