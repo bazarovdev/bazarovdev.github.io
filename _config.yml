@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Alexander Bazarov
+title: Alexander Bazarov's Blog
 email: alexander@bazarov.dev
 description: >- # this means to ignore newlines until next section
   Personal blog with projects and notes. 
@@ -28,18 +28,17 @@ github_username:  bazarovdev
 
 # Build settings
 #theme: minima
-remote_theme: pages-themes/minimal@v0.2.0
+theme: just-the-docs
 plugins:
   #- jekyll-feed
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
-  #- jekyll-relative-links
+  - jekyll-relative-links
 
 # relative_links:
 #   enabled:     true
 #   collections: true
 
 collections:
-  projects:
+  tech_projects:
     output: true
 
   # - name: Yocto Layer for Klipper
@@ -49,6 +48,16 @@ collections:
   # - name: Project 3
   #   url: /project3/
 
+just_the_docs:
+  # Define which collections are used in just-the-docs
+  ga_tracking: G-1D0S99KRGN
+  ga_tracking_anonymize_ip: true
+  collections:
+    # Reference the "tests" collection
+    tech_projects:
+      permalink: "/:collection/:path/"
+      # Give the collection a name
+      name: Tech Projects
 
 # kramdown:
 #   input: GFM
