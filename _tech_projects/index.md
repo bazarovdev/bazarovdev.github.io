@@ -11,7 +11,8 @@ nav_exclude: true
 <ul>
 {% for project in site.tech_projects %}
   {% assign rel = project.relative_path | remove_first: '_tech_projects/' %}
-  {% if rel != 'index.md' and rel | slice: -9, 9 == '/index.md' %}
+  {% assign rel_end = rel | slice: -9, 9 %}
+  {% if rel != 'index.md' and rel_end == '/index.md' %}
     <li>
       <a href="{{ project.url }}">{{ project.title | default: project.path }}</a>
     </li>
