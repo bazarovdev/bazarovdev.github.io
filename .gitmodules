@@ -1,6 +1,6 @@
-[submodule "_projects/meta-klipper"]
+[submodule "_tech_projects/meta-klipper"]
 	path = _tech_projects/meta-klipper
 	url = https://github.com/bazarovdev/meta-klipper.git
-[submodule "_projects/cmyk-3dprint"]
+[submodule "_tech_projects/cmyk-3dprint"]
 	path = _tech_projects/cmyk-3dprint
 	url = https://github.com/bazarovdev/cmyk-3dprint.git
