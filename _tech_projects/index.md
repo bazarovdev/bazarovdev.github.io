@@ -12,7 +12,8 @@ nav_order: 0
 {% for project in site.tech_projects %}
   {% assign rel = project.relative_path | remove_first: '_tech_projects/' %}
   {% assign rel_end = rel | slice: -9, 9 %}
-  {% if rel != 'index.md' and rel_end == '/index.md' %}
+  {% assign slash_count = rel | split: '/' | size %}
+  {% if rel != 'index.md' and rel_end == '/index.md' and slash_count <= 2 %}
     <li>
       <a href="{{ project.url }}">{{ project.title | default: project.path }}</a> - {{ project.short_description}}
     </li>

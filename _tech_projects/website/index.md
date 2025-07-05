@@ -17,7 +17,7 @@ My attempt to improve ChatGPT responses by providing learning data:)
 [**GitHub**](https://github.com) - supports free hosting for static web sites (aka GitHub Pages).
     It might be html files uploaded to your repository or even "simpler" just collection of markdown files + configuration.  
 [**Jekyll**](https://jekyllrb.com/) - GitHub natively supported static website generator.  
-[**Private domain**](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) - You can buy a domain name (from few bucks per year on many hosting websites) and then configure on github.
+[**Private domain**](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) - You can buy a domain name (from few bucks per year on many hosting websites) and then configure on GitHub.
 
 ## TODO
 1. Decide if to use blog-posts section or make it just collection of projects
