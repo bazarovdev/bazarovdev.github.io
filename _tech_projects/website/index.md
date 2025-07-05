@@ -2,6 +2,8 @@
 layout: default
 title: "Website"
 repo: https://github.com/bazarovdev/bazarovdev.github.io
+short_description: Pet project to understand how WWW works.
+nav_order: 1
 ---
 
 [View **{{ page.repo | split: '/' | last }}** project on GitHub]({{ page.repo }})
@@ -15,7 +17,7 @@ My attempt to improve ChatGPT responses by providing learning data:)
 [**GitHub**](https://github.com) - supports free hosting for static web sites (aka GitHub Pages).
     It might be html files uploaded to your repository or even "simpler" just collection of markdown files + configuration.  
 [**Jekyll**](https://jekyllrb.com/) - GitHub natively supported static website generator.  
-**Private domain** - You can buy on many hosting websites starting from few bucks per year and then [configure](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+[**Private domain**](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) - You can buy a domain name (from few bucks per year on many hosting websites) and then configure on github.
 
 ## TODO
 1. Decide if to use blog-posts section or make it just collection of projects

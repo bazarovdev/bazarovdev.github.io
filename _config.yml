@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Alexander Bazarov's Blog
+title: Alex's Blog
 email: alexander@bazarov.dev
 description: >- # this means to ignore newlines until next section
   Personal blog with projects and notes. 
@@ -27,16 +27,14 @@ url: "https://bazarov.dev" # the base hostname & protocol for your site, e.g. ht
 github_username:  bazarovdev
 
 # Build settings
-#theme: minima
 remote_theme: just-the-docs/just-the-docs
 plugins:
-  #- jekyll-feed
   - jekyll-relative-links
   - jekyll-sitemap
 
-# relative_links:
-#   enabled:     true
-#   collections: true
+relative_links:
+  enabled:     true
+  collections: true
 
 collections:
   tech_projects:
@@ -54,14 +52,13 @@ just_the_docs:
   ga_tracking: G-1D0S99KRGN
   ga_tracking_anonymize_ip: true
   collections:
-    # Reference the "tests" collection
     tech_projects:
       permalink: "/:collection/:path/"
       # Give the collection a name
-      name: Tech Projects
+      name: "Tech Projects"
 
-# kramdown:
-#   input: GFM
+kramdown:
+  input: GFM
 
 # Exclude from processing.
 # The following items will not be processed, by default.
